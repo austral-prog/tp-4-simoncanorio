@@ -1,2 +1,7 @@
 def leap_year():
-    print("TO DO")
+    año = int(input("Ingrese un año: "))
+    if año % 4 == 0 or año % 400 == 0:
+        return print(f"El año {año} es bisiesto")
+    else:
+        return print(f"El año {año} no es bisiesto")
+leap_year()
